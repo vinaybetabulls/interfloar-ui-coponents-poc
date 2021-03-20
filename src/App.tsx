@@ -8,9 +8,10 @@ import { MenuItems } from "./components/common/Header.menuItems";
 import { FooterData } from "./components/common/Footer.common";
 
 function App() {
+  console.log({...MenuItems});
   return (
     <div className="">
-      <Header megaNav={MenuItems.megaNav}/>
+      <Header {...MenuItems}/>
       <Footer footer={FooterData.data}/>
     </div>
   );

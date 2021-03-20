@@ -33,9 +33,19 @@ export const Styles = makeStyles(()=> ({
 
                     '& a': {
                         'textDecoration': 'none',
-                        'color': colors.primaryColor
+                        'color': colors.primaryColor,
+                        position: 'relative',
+                        '&:hover': {
+                            '& $subChild': {
+                                display: "flex"
+                            }
+                        }
                     }
                 }
             } 
+    },
+    subChild: {
+        display: "none",
+        position: 'absolute'
     }
 }))
